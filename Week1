@@ -1,0 +1,88 @@
+Data Engineering Week 1
+10/12/2024
+1. Data Admin team — Data management team( security / Governance) / DB admin team( oracle , postressql) — setup the cluster/ user management, schema, data I/O ( 80- 100) 
+2. Data Platform team( process the data)  — data platform( hadoop/ spark/ kafka…) / Data warehousing Team( oracle , sql  server, ) / Data lake Team( snowflake, cosmos db , mongodb)  / ETL ( Extract/ Transform/load) Team  — Admin & Developer ( 100 - 150)  — processing/cleaning /pipeline/ Devops 
+3. Data Analytics  team — Visualisation team ( power/ Tableau/ aws/azure/google)  — Admin - 30 
+4. Data Science team — data evaluation & market study / algorithm — development & Engineering 50 - 100 
+
+
+Data ? — factual information / collection of facts, information or statistics—  meaning information 
+
+Type of Data 
+1. Structure Data  - tabular format 
+    1.  Tabular format —  excel( large amount of data) ..  DB — - high I/O — oracle db ( 1Trillion )  - 3sec   search — Kumar  ( 10,000 — parallel searching of data) 
+    2. Fixed table column & Row — DB Schema( table - student information ( Name: BE_table1 - ( Column -  Name(character) , Age(number) , Division( char & number), branch(character) )  
+    3. Insert, modify, edit, delete  
+    4. ( kumar, 21, BE, CSC) Relational database 
+    5. MYSQL , oracle SQL, postgresSQL, MS SQL
+    6. SQL query to fetch the data
+2. Semi-Structure Data- no tabular format/no schema — json/yaml 
+    1. Each record  has variable information ( no fixed row and column) 
+    2. No Fixed Schema 
+    3. NO SQL kind of data
+    4.  JSON/YAML format(  Student1: { Name:  kumar, Age: 21, Branch: CSC}, Student2: { Name: Sam, Age: 20 , Division: BE, Branch: ECE})  
+    5. Language — pascal/fortu…/ C/C++ / .net/java/python / Rust  —  C — json/yaml   java ( / MEAN/MERN 
+    6. Mongodb /cassandra/ Redis - cache  in-memory  temp db / neo4j - Graph Db (  priority ( kumar ) sub graph ( arun kumar )) 
+3. Unstructured Data ( image/video/logs) - blocks /bytes  — streaming website 
+    1.  Image
+    2. Video
+    3. Logs ( Application, system , transaction ) 
+    4. PPT ( images, data, video ) — search word — ?    Gen AI ( NLP /    LLM Framework )
+
+11/12/2024
+Batch processing Vs Streaming  Data
+
+Batch ( group of data and process the information  based on the task)   — mainframe server /hadoop server  — Structured data 
+1. Start of the data and end of the data
+2. Size of the data is known 
+3. Schedule activity  or action based on the data availability or change happen on the data itself 
+    1. Bank transactions
+    2. Scheduled activity like copy the data , validate the information, money transfer 
+
+Streaming Data:  Netflix /YouTube 
+1. Start and end of the data is unknown 
+            1. Video
+            2. Images 
+            3. Log information which will be generated continuously 
+2. Unstructured format
+3. We cannot predict the amount of data it is going to come to the system 
+
+11/13/2024
+
+OLTP Vs OLAP
+
+Online transaction processing 
+
+1. Login to the website
+2. Online transaction ( money , payment gateway) 
+3. Single data Source ( login/credentials  information, bank account information, money transaction ) 
+  4. Structured data
+  5. Relational DB ( Tables) 
+
+Online Analytics processing
+ 1.  Unstructured data
+2. Complex query 
+3. Multiple data source
+    1. Long running or validation activity ( 1G/100G ) — ingest/merge/clean/Validate — Analyse and visualize  — Data analytics ( market study/ customer satisfaction) 
+
+
+
+
+Data Lake Vs Data Warehouse( Data Storage or Data Ingestion) 
+
+Data  Lake
+            1. Unstructured/structured/semi-structured( All types of data) 
+            2.  Data scientists/Data analytics/ Data engineering Team 
+            3. No fixed Schema or data format will be their 
+            4. Raw Data format( excel/ Table/ text/pdf/parque)
+            5.  Ex:  hadoop / S3 bucket / Snowflake( SAAS) / AWS Redshift 
+            6.  All data format  into single data format
+Data Warehouse:
+	1. Structured Data
+	2. Fixed Schema( fixed column information) 
+        3. Application team use for integrating with DB ( Oracle, mysql, SQL server) 
+
+
+11/14/2024
+ 1. Subscription — college Name
+2. Resource Group — division ( block)   - financegrp ( vm -  network, ip  , loadbalance)  - $200 
